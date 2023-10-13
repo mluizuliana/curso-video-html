@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <!--São os que te levam para um outro site, partindo do atual, começando uma navegação nova;
+        Se usado a tag target="_blank" como no exemplo abaixo, o site do link será aberto em outra aba, recomenda-se o uso com a tag rel="external", pois identifica para o navegador que o site abrirá externo à navegação que estava ocorrendo.-->
+    <p>Você pode acessar o meu <a href="https://github.com/mluizuliana" target="_blank" rel="external">repositório público no GitHub.</a></p>
+    <p>Você também pode acessar <a href="https://www.youtube.com/channel/UCdL5h2JSYMlI49-tocUksAg" target="_blank" rel="external">o meu canal de jogos no youtube.</a></p>
+    <h1>Usando links internos</h1>
+    <!--Fará a relação com outra página que esta dentro do nosso servidor e condiz ao próprio site;
+        Não há a opção internal na tag rel para sinalizar que vai estar direcionando para o próprio servidor, usa-se rel="next" (próximo), e rel="previous" (anterior). Visualmente nada irá acontecer, porém para a boa interpretação dos navegadores é essêncial.-->
+    <p>Esta é a primeira página do site. Se você quiser, pode também acessar a minha <a href="pag002.html" rel="next">segunda página.</a></p>
+    <p>Você também pode acessar a nossa <a href="Notícias/pag003.html" rel="next">página de notícias.</a></p>
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="curriculum/Meigan Luiz Uliana.pdf" download="curriculum" type="application/pdf">Clique aqui para fazer download do PDF.</a></li>
+        <li><a href="curriculum/Meigan Luiz Uliana.zip" download="curriculum" type="application/zip">Clique aqui para fazer download do PDF.</a></li>
+        <!--Nem todos os types reconhecem a tag "download", que torna o download automático;
+            A tag type apresentára qual é o tipo de arquivo de mídia à ser baixado, todos os tipos de arquivos podem ser encontrados em: https://www.iana.org/assignments/media-types/media-types.xhtml.-->
+    </ul>
+</body>
+</html>
+
+<!--rel="external", identifica para o navegador que o site abrirá externo à navegação que estava ocorrendo
+rel="next" (próxima página do site)
+rel="previous" (página anterior do site)
+rel="nofollow" (link do qual os navegadores não devem perpetuar, tratar como principal)-->
+
+
+

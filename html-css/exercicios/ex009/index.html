@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <!--Iniciar uma lista ordenada tag <ol>, cada ítem da lista é <li>, caso precise mudar um ítem, não será necessário mudar todos os números de ordem, como seria se não fosse feito com a tag <ol>, e sim manualmente-->
+    <h2>Listas Ordenadas</h2> 
+    <!--O parâmetro "type" das listas ordenadas permite as opções:
+        1 (lista normal), onde também pode se escolher o número de start;
+        A (listagem em letras maiúsculas);
+        a (listagem em letras minúsculas);
+        I (números romanos em letras maiúsculas);
+        i (números romanos em letras minúsculas)-->
+    <ol type="1" start="1">
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Lavar roupa</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <h2>Listas Não Ordenadas</h2>   
+    <!--O parâmetro "type" das listas não ordenadas permite as opções:
+        disc (pontos pretos);
+        circle (círculo preto mas branco no meio);
+        square (quadrado);-->
+    <ul type="square">   
+        <li>Pão</li>
+        <li>Tomate</li>
+        <li>Leite</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+    <h2>Minhas linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5">
+            <!--O start, mesmo que o type seja algoritmos, só funciona com números, a lista abaixo por exemplo vai começar direto no "e" que é a quinta letra do alfabeto-->
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+        <li>NES</li>
+            <ul type="square">
+                <li>Mário Bros</li>
+                <ul type="circle">
+                    <li>Mário Bros 3</li>
+                    <li>Mario: Lost Levels</li>
+                </ul>
+                <li>Ninja Gaiden</li>
+            </ul>
+        <li>SNES</li>
+            <ul type="square">
+                <li>Mario</li>
+                <li>Donkey Kong</li>
+            </ul>
+        <li>Playstation</li>
+            <ul type="square">
+                <li>Final Fantasy</li>
+                <li>Castlevania</li>
+            </ul>
+    </ol>
+    <h2>Lista de Definições</h2>
+    <!--A tag <dt> é o termo e a tag <dd> é a descrição do mesmo-->
+    <dl>
+        <dt>Termo</dt>
+        <dd>Descrição</dd>
+        <dt>HTML</dt>
+        <dd>HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web. Outras tecnologias além do HTML geralmente são usadas para descrever a aparência/apresentação (CSS) ou a funcionalidade/comportamento (JavaScript) de uma página da web.</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets é um mecanismo para adicionar estilos a uma página web, aplicado diretamente nas tags HTML ou ficar contido dentro das tags style. Também é possível, adicionar estilos adicionando um link para um arquivo CSS que contém os estilos.</dd>
+        <dt>JavaScript</dt>
+        <dd>JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.</dd>
+    </dl>
+</body>
+</html>
+
